@@ -1,0 +1,15 @@
+{
+  "app": {
+      "name": ""
+  },
+  "server": {
+      "port": 3306
+  },
+  "development": {
+          "username": "root",
+          "password": "root",
+          "database": "ECommerce",
+          "host": "127.0.0.1",
+          "dialect": "mysql"
+  }
+} 

@@ -1,0 +1,77 @@
+.btnCreateProduct {
+    text-align: center;
+}
+.btnCreateProduct input[type="submit"]{
+    width: 10%;
+}
+
+.container_register,
+.container_email_password_login {
+    margin-top: 20px;
+    background: rgba(255,255,255,0.7)
+}
+
+.contSubmitRegister {
+    text-align: center;
+}
+ 
+.contenedorGenero {
+    display: flex;
+}
+
+.profile {
+    padding-top: 20px;
+    background: rgba(255,255,255,0.7);
+}
+
+.profile div {
+    text-align: center;
+}
+
+.profile div div div {
+    display: flex;
+    justify-content: center;
+}
+
+.profile img {
+    width: 100px;
+}
+
+.contenedorGenero div {
+    margin-top: 5px;
+}
+
+.contenedorGenero div:nth-child(1) {
+    margin-right: 30px;
+}
+
+.contenedorGenero label {
+    font-size: 18px;
+}
+
+.userLoggedContainer {
+    text-align: right;
+}
+
+.userLoggedContainer a {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.userLoggedContainer img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.edit {
+    background: rgba(255,255,255,0.7);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 1000px){
+    .btnCreateProduct input[type="submit"]{
+        width: 20%;
+    }
+}
+

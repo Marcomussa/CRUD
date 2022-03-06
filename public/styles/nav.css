@@ -1,0 +1,38 @@
+.contLoginRegisterLinks,
+.contenedorLinkCart {
+    text-align: right;
+}
+
+.contCenterLinks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contCenterLinks a{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+.red {
+    background-color: red;
+}
+
+.lightDarkBtn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	transition: background 0.2s linear;
+}

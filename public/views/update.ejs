@@ -1,0 +1,48 @@
+<%- include('./partials/head.ejs') %> 
+
+<%- include('./partials/nav.ejs') %> 
+
+<body>
+
+    <div class="container background">
+        <h3 class="mb-3">Actualizar: #<%= products.id %> </h3>
+
+        <form action="/products/updated/<%= products.id %> " method="POST" enctype="multipart/form-data">
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="name" class="mb-1">Nombre</label>
+                    <input type="text" name="name" value='<%= products.name %>' id="name" class="form-control">
+                </div>
+    
+                <div class="col-md-6">
+                    <label for="description" class="mb-1">Descripcion</label>
+                    <input type="text" name="description" value="<%= products.description %>" id="description" class="form-control">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="price" class="mb-1">Precio</label>
+                    <input type="text" name="price" value="<%= products.price %>" id="price" class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <label for="discount" class="mb-1">Descuento</label>
+                    <input type="text" name="discount" value="<%= products.discount %>" id="discount" class="form-control">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6 mb-1">
+                    <label for="updateProductImg" class="mb-1">Imagen</label>
+                    <input type="file" class="form-control" id="updateProductImg" name="updateProductImg" value='<%= products.img %> '>
+                </div>
+            </div>
+
+            <input type="submit" value="Actualizar" class="btn btn-success">
+        </form>
+    </div>
+
+</body>
+
+<%- include('./partials/footer.ejs') %> 

@@ -1,0 +1,51 @@
+<%- include('./partials/head.ejs') %> 
+
+<%- include('./partials/nav.ejs') %> 
+
+<body>
+
+    <div class="container contCreateProd background">
+        <h3>Crear Producto</h3>
+
+        <form action="/products/create" method="POST" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="name" class="mb-1">Nombre</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="description" class="mb-1">Descripcion</label>
+                    <input type="text" id="description" name="description" class="form-control" placeholder="Descripcion">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="price" class="mb-1">Precio</label>
+                    <input type="text" id="price" name="price" class="form-control" placeholder="$">
+                </div>
+                <div class="col-md-6">
+                    <label for="discount" class="mb-1">Descuento</label>
+                    <input type="text" id="discount" name="discount" class="form-control" placeholder="Descuento">
+                </div>
+                <div class="col-md-6">
+                    <label for="category">Categoria</label>
+                    
+                    <select name="category" class='form form-control' id='category'>
+                        <option value="null" selecter>Seleccionar Categoria</option>
+                        <% for(let i = 0; i < categorys.length; i++){ %> 
+                            <option value="<%= categorys[i].id %>"><%= categorys[i].name %></option>
+                        <% } %> 
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="uploadProductImg" class="mb-1">Imagen</label>
+                    <input type="file" class="form-control" id="uploadProductImg" name="productimg">
+                </div>
+            </div>
+            <div class="col-md-12 btnCreateProduct">
+                <input type="submit" value="Crear" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+<%- include('./partials/footer.ejs') %> 

@@ -1,0 +1,356 @@
+[
+ {
+  "id": 1,
+  "name": "a",
+  "surname": "a",
+  "email": "a",
+  "password": "$2a$10$2y2PPM7NF7BGhYtzhj.vX.2DL9MXqVS56JxKagtV8qEwFVAIQwbTO",
+  "avatar": "undefined"
+ },
+ {
+  "id": 2,
+  "name": "",
+  "surname": "",
+  "email": "",
+  "password": "$2a$10$MDsNbM5Y9dp3zPXUE7S0ZO950oT6EXgS5L6MX2paQ7cajUWB5ZntW",
+  "avatar": "default.jpeg"
+ },
+ {
+  "id": 3,
+  "name": "asas",
+  "surname": "",
+  "email": "asas",
+  "password": "$2a$10$vwj0eespqaBrz5DjKQjx2e6.Vlj6MXeZrVNnjOANyOGt4XQpLT/Jm",
+  "avatar": "undefined"
+ },
+ {
+  "id": 4,
+  "name": "Juan",
+  "surname": "Lopez",
+  "email": "CUCASASA",
+  "password": "$2a$10$Ep5EaufR3luiSJ3YwQ8hg.Smp0EZAz2aM7OHoyCt4uRmqxECSPkb2",
+  "avatar": "undefined",
+  "permisos": false
+ },
+ {
+  "id": 5,
+  "name": "B",
+  "surname": "B",
+  "email": "B",
+  "password": "$2a$10$vJOJEAlnJqDybIUMLiZMr.gwSSWSNMqKnK.fjHGbV27SCw2ggtxtK",
+  "avatar": "undefined",
+  "permisos": false
+ },
+ {
+  "id": 6,
+  "name": "marco",
+  "surname": "mussa",
+  "email": "marco",
+  "password": "$2a$10$FT6kPMEN6oDAg5y1qfR4heF10k6ms.PdZJwBzbKt.WVRyKVwrz.I.",
+  "avatar": "undefined",
+  "permisos": false
+ },
+ {
+  "id": 7,
+  "name": "root",
+  "surname": "root",
+  "email": "root",
+  "password": "$2a$10$QlZwot1ZowPO2hFDq1ZICuRJvaLu2usv0fyiLDOKTWvRX4W6vdJk2",
+  "avatar": "1641764249961.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 8,
+  "name": "b",
+  "surname": "a",
+  "email": "b",
+  "password": "$2a$10$DzPr5V6lFwVLrrLjtlMRbOzSxagnFUQgtojM1BcjSIifN6ig2lxuS",
+  "avatar": "1641764249961.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 9,
+  "name": "ds",
+  "surname": "ds",
+  "email": "ds",
+  "password": "$2a$10$1FSy/Aj5X93fXs0n7DOg4.Y.GgGpCOieBevezrWN0ZBWMqKb1n7QO",
+  "avatar": "undefined",
+  "permisos": false
+ },
+ {
+  "id": 10,
+  "name": "cuca",
+  "surname": "",
+  "email": "cuca",
+  "password": "$2a$10$Wp5LEys7wqE5KCifruRN4e.2b4Cof8jseyqcIgLq/cfV6T1cFNdGq",
+  "avatar": "undefined",
+  "permisos": false
+ },
+ {
+  "id": 11,
+  "name": "ass",
+  "surname": "as",
+  "email": "asss",
+  "password": "$2a$10$j7TId9sZBY5Yp7kE3hPLkuFtASLVnSekAwPnBPagQgvproOMDTuES",
+  "avatar": "default.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 12,
+  "name": "qw",
+  "surname": "qw",
+  "email": "qw",
+  "password": "$2a$10$wnWacJ.xUgOS.9h0tO3V/.zj8.h9U2tmszkzo0at87eO79Tj9t6JO",
+  "avatar": "1641831559908.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 13,
+  "name": "12",
+  "surname": "12",
+  "email": "12",
+  "password": "$2a$10$3HoXtF9F0a632aqx/ONu7OhvLLGDLh0lefSn6zZ90OBFa6Z941Pea",
+  "genero": "on",
+  "avatar": "1641831679411.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 14,
+  "name": "21",
+  "surname": "21",
+  "email": "21",
+  "password": "$2a$10$3GOxMcQtYkbUGfaQreES4.XuJXHmswDN4TRlBXW2ATwMtnRg.1lvi",
+  "genero": "on",
+  "avatar": "1641831743905.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 15,
+  "name": "32",
+  "surname": "32",
+  "email": "32",
+  "password": "$2a$10$ptiR7bKq6q1tRm/.Puu7MehFzgwQGtXIaLqY9zdapuuwa6.V6yb9K",
+  "genero": "masc",
+  "avatar": "default.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 16,
+  "name": "13",
+  "surname": "13",
+  "email": "13",
+  "password": "$2a$10$L5wmY7MicBgeykm90vXUDOD/3cD5egAh.S.C48xXWCCoFK2f1cqk.",
+  "genero": "fem",
+  "avatar": "1641831810560.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 17,
+  "name": "re",
+  "surname": "re",
+  "email": "re",
+  "password": "$2a$10$Lz0mkgIBrCgWb/seEjA2leaHEbK9HOWr5Htq5V1ZGGPWjHEZXMgW6",
+  "genero": "masc",
+  "avatar": "default.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 18,
+  "name": "9",
+  "surname": "9",
+  "email": "9",
+  "password": "$2a$10$OlNRe/qYJGn5xIB8asSVAOvcid1xRACKoUefsM.KjFGTcqVgCSMPa",
+  "genero": "masc",
+  "avatar": "default.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 19,
+  "name": "8",
+  "surname": "8",
+  "email": "8",
+  "password": "$2a$10$n3leINxqvWql4DyNhvNEE.AH2yENXfWkugsqjlO4GkiiDHbdJX3x6",
+  "genero": "masc",
+  "avatar": "default.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 20,
+  "name": "x",
+  "surname": "x",
+  "email": "x",
+  "password": "$2a$10$5qjV4c5Li3Qj.mZtwHY7.OD.qaktWgcfiaK41OFYAd7ItK5BSPltC",
+  "genero": "masc",
+  "avatar": "default.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 21,
+  "name": "s",
+  "surname": "s",
+  "email": "s",
+  "password": "$2a$10$Y4q/pnz4bHms5nqCtciJFO4mNbQhk.MATbDJcOMRBbEEussHGfLUi",
+  "avatar": "default.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 22,
+  "name": "as",
+  "surname": "as",
+  "email": "sa",
+  "password": "$2a$10$PrlQpoTmgg.WxsNuxlxE5O8uiqFuMAAL3usNz2cFlSyZ.gbNww4Dm",
+  "avatar": "default.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 23,
+  "name": "zx",
+  "surname": "zx",
+  "email": "z",
+  "password": "$2a$10$celg7gmrXNsJVLaidORpsO8SYBTXBssdTGyFxaSoauNf8d9CNzvI.",
+  "avatar": "default.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 24,
+  "name": "zyzz",
+  "surname": "",
+  "email": "zyzz",
+  "password": "$2a$10$CWwVxYYyhkoOQijH44NdQ.qHfZG67868fTvWHfHzTx3rsFjaJL9Aq",
+  "avatar": "default.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 25,
+  "name": "marco",
+  "surname": "mussa",
+  "email": "ala",
+  "password": "$2a$10$f6w.RUw7YedbikOsta1vS.W16d2mBfKYfOEiGDKXu1InXctDuRZo6",
+  "genero": "masc",
+  "avatar": "1641834094929.gif",
+  "permisos": false
+ },
+ {
+  "id": 26,
+  "name": "c",
+  "surname": "c",
+  "email": "c",
+  "password": "$2a$10$hX8LPEru4AvR7a1a6Ek13uSVxldWj5GTiOAEWfmalSewYDH3Kr.rS",
+  "avatar": "1641834224555.png",
+  "permisos": false
+ },
+ {
+  "id": 27,
+  "name": "juan",
+  "surname": "juan",
+  "email": "juan",
+  "password": "$2a$10$jevFBayAMPoX9Jj8E9x2Du5UOGFMo/V9mVkEN4N0DANn3mxsSfK9y",
+  "genero": "masc",
+  "avatar": "1641935627550.gif",
+  "permisos": false
+ },
+ {
+  "id": 28,
+  "name": "f",
+  "surname": "f",
+  "email": "f",
+  "password": "$2a$10$i5G9V5/h/BiATa4ppX8RaOoN8/yemcT3x.VxslLcwrKUaBA0w/GhO",
+  "genero": "masc",
+  "avatar": "1641935641483.gif",
+  "permisos": false
+ },
+ {
+  "id": 29,
+  "name": "",
+  "surname": "",
+  "email": "efewfew",
+  "password": "$2a$10$EklcLTT3mJaJryVaZNlWvODticq5ubd9z0PQk5sbJSQT5xzGcofzK",
+  "avatar": "default.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 30,
+  "name": "gr",
+  "surname": "gr",
+  "email": "gr",
+  "password": "$2a$10$z86rheTdyRjjD2qh60/Tg.X92iexqhzJaZ2G6v.rond6OJVizfybK",
+  "avatar": "default.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 31,
+  "name": "i",
+  "surname": "i",
+  "email": "i",
+  "password": "$2a$10$vXzcuY.JyKsKsc6/N1eU4OCP4DY2o2rRc43tYkYc.c.34o6f4bCpy",
+  "genero": "masc",
+  "avatar": "default.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 32,
+  "name": "n",
+  "surname": "n",
+  "email": "n",
+  "password": "$2a$10$DwWsW0od58o4xNPgTcq.Pez97FR3PjZ35u2ze.KCv2dVsJHOqt5A.",
+  "avatar": "default.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 33,
+  "name": "nina",
+  "surname": "nina",
+  "email": "nina",
+  "password": "$2a$10$Z6hYMP4SQ82jUkGLtj6Oo.mkc.QhxOHXjVqoHabLpA2A5cDxg9wIS",
+  "avatar": "default.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 34,
+  "name": "k",
+  "surname": "k",
+  "email": "k",
+  "password": "$2a$10$zUVMA4iNC5wQG/MWGBoKluh5.SBSeBAco8ehJPOG5IcjmSs5oWY02",
+  "avatar": "default.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 35,
+  "name": "v",
+  "surname": "v",
+  "email": "v",
+  "password": "$2a$10$crWJyoSW8eJmaa57r2kKO.eWAr8QloOh2O0rOPYAJ/UgBOdUgO2qC",
+  "genero": "masc",
+  "avatar": "1642632775449.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 36,
+  "name": "1",
+  "surname": "1",
+  "email": "1",
+  "password": "$2a$10$NkzC2ZPT9Vlmfqn9NYS3C.cupG76nXsKnVQMFiiu95NYmD9L9GOPC",
+  "avatar": "default.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 37,
+  "name": "2",
+  "surname": "2",
+  "email": "2",
+  "password": "$2a$10$YczG/FkpHLT8yBLTFR.xOOwp0/dHEB/QslQ..HIGiBVXf63eQBTN6",
+  "genero": "masc",
+  "avatar": "default.jpeg",
+  "permisos": false
+ },
+ {
+  "id": 38,
+  "name": "Marco",
+  "surname": "Mussa",
+  "email": "marcomussa567@gmail.com",
+  "password": "$2a$10$xBpb1yA.c7zOa5nL31MGuOevmC4aslfcSEI1q/qKQeIBvcIXTNloi",
+  "genero": "masc",
+  "avatar": "1642773948894.jpeg",
+  "permisos": false
+ }
+]

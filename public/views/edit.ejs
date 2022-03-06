@@ -1,0 +1,82 @@
+<%- include('./partials/head.ejs') %> 
+
+<%- include('./partials/nav.ejs') %> 
+
+<body>
+
+   <div class="container edit">
+       <h3 class="mb-3">Editar Usuario</h3>
+       <form action="/user/edited" method='POST' enctype="multipart/form-data">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="editUserName">Nombre</label>
+                    <input type="text" class="form form-control" placeholder=<%= userLogged.name %> name="name" id="editUserName">
+                </div>
+                <div class="col-md-6">
+                    <label for="editUserSurName">Apellido</label>
+                    <input type="text" class="form form-control" placeholder=<%= userLogged.surname %> name="surname" id="editUserSurname">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="editEmail">Email</label>
+                    <input type="text" class="form form-control" disabled placeholder=<%= userLogged.email %> name="email" id="editEmail">
+                </div>
+                <div class="col-md-6">
+                    <label for="editAvatar">Avatar</label>
+                    <input type="file" name="editAvatar" id="editAvatar" class="form form-control">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <input type="text" placeholder="Nueva Password" class="form form-control" name="newPass" id="newPass">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="Confirmar Password" class="form form-control" name="confirmNewPass" id='confirmNewPass'>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-success" id="btnEdit">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <span id="msgValidarNewPassword">Las passwords no coinciden</span>
+                </div>
+            </div>
+       </form>
+   </div>
+
+</body>
+
+<script>
+
+    let qs = (par) => {
+        return document.querySelector(par)
+    }
+
+    let name = qs()
+    let sur
+    let newPass = qs('#newPass')
+    let confirmNewPass = qs('#confirmNewPass')
+    let btn = qs('#btnEdit')
+    let msgValidarNewPassword = qs('#msgValidarNewPassword')
+
+    msgValidarNewPassword.style.display = 'none'
+
+    btn.addEventListener('click', (e) => {
+
+        function validarPasswords(){
+            if(newPass.value != confirmNewPass.value){
+                e.preventDefault()
+                msgValidarNewPassword.style.display = 'block'
+            } else {
+                msgValidarNewPassword.style.display = 'none'
+            }
+        }
+        
+        validarPasswords()
+    })
+    
+</script>

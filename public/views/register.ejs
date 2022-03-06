@@ -1,0 +1,66 @@
+<%- include('./partials/head.ejs') %> 
+
+<%- include('./partials/nav.ejs') %> 
+
+<body>
+   
+    <div class="contenedorMadreRegister">
+     <section class="container container_register">
+         <h3 class="mb-3">Create User:</h3>
+         <form action="/user/register" method='POST' enctype="multipart/form-data">
+             <div class="row g-3 container_name_surname_register">
+                 <div class="col-md-6">
+                   <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" name="name">
+                 </div>
+                 <div class="col-md-6 mb-3">
+                   <input type="text" class="form-control" placeholder="Surname" aria-label="Apellido" name="surname">
+                 </div>
+             </div>
+             <div class="row g-3 container_email_pass_register">
+                 <div class="col-md-6">
+                   <input type="text" class="form-control" placeholder="Email" name="email">
+                 </div>
+                 <div class="col-md-6 mb-3">
+                   <input type="password" class="form-control" placeholder="Password" name="password">
+                 </div>
+             </div>
+             <div class="row">
+                <div class="col-md-6 mb-3">
+                    <input type="file" class="form-control uploadAvatar" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" name="avatar">
+                </div>
+                <div class="contenedorGenero col-md-6">
+                    <div class="">
+                        <input type="radio" name="genero" id="masc" value="masc">
+                        <label for="masc">Masculino</label>
+                    </div>
+                    <div class="">
+                        <input type="radio" name="genero" id="fem" value="fem">
+                        <label for="fem">Femenino</label>
+                    </div>
+                </div>
+             </div>
+             <div class="col-md-12 contSubmitRegister">
+                <input type="submit" class="btn btn-primary btnRegistrarse" value="Registrarse">  
+            </div>
+         </form>
+         <div>
+             <% if(typeof validaciones != 'undefined'){ %>
+                 <% validaciones.forEach( (validacion) => { %>
+                     <p style="color: red;">
+                     <%= validacion.msg %> 
+                 </p>
+                 <% }) %> 
+             <% } %> 
+             <% if(locals.errors && errors.email){ %>
+                 <p>
+                     <%= errors.email.msg %> 
+                 </p>
+             <% } %> 
+         </div> 
+     </section>
+     
+    </div>
+ 
+ </body>
+
+<%- include('./partials/footer.ejs') %> 

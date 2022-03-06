@@ -1,0 +1,48 @@
+<%- include('./partials/head.ejs') %> 
+
+<%- include('./partials/nav.ejs') %> 
+
+<body>
+
+    <div class="contenedorMadre">
+        <section class="container container_email_password_login">
+            <h3 class="mb-3">Login:</h3>
+            <form action="/user/login" method='POST'>
+                <div class="row g-3 sub_container_email_password_login">
+                    <div class="col-md-6 sub_container_email_login">
+                      <input type="text" class="form-control" placeholder="Email" name="email">
+                    <% if(locals.errors && errors.email){ %>
+                        <span>
+                            <%= errors.email.msg %> 
+                        </span>
+                    <% } %> 
+                    </div>
+                    <div class="col-md-6 sub_container_password_login mb-3">
+                      <input type="password" class="form-control" placeholder="password" name="password">
+                    </div>
+                </div>
+                <div class="row sub_container_checkbox_login">
+                    <div class="col-md-12 mb-3">
+                        <input type="checkbox" name="recordarUser" id="recordarUser">
+                        <label for="recordarUser">Recordar Usuario</label>
+                    </div>
+                </div>
+                <div class="row sub_container_checkbox_login">
+                    <div class="col-md-12 mb-3">
+                        <a href="/user/forgot-password">Olvidaste tu password?</a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-primary" value="Log In">  
+                </div>
+            </form>
+        </section>
+    
+        <div>
+           
+        </div>
+    </div> 
+
+</body>
+
+<%- include('./partials/footer.ejs') %> 

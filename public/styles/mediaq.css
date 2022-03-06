@@ -1,0 +1,19 @@
+
+@media screen and (max-width: 1199px) {
+    .contProductIndex {
+        justify-content: space-between;
+    }
+    .contProductIndex .subContProductIndex {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contProductIndex {
+        justify-content: none;
+    }
+    .contProductIndex .subContProductIndex {
+        width: 40%;
+       
+    }
+}

@@ -1,0 +1,101 @@
+<nav>
+        <% if(locals.isLogged){ %>
+            <div class="container background pt-3 pb-3 mb-3">
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <a href="/">Logo</a>
+                    </div>
+                    <div class="col-md-4 contCenterLinks">
+                        <a href="/products/offers">Ofertas</a>
+                        <a href="/products">Productos</a>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Cateogorias
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a href="/products/createCategory">Crear</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 userLoggedContainer">
+                        <a href="/user/profile">Perfil</u></a> 
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-4 d-flex contInputBuscar">
+                        <input type="text" class="form-control inputBuscar" placeholder="Buscar Producto">
+                        <button class="btn btn-success">Buscar</button>
+                    </div>
+                    <div class="col-md-8 contenedorLinkCart">
+                        <a href="/cart">Carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        <% } else { %>
+            <div class="container background pt-3 pb-3 mb-3" id="navContainer">
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <a href="/">Logo</a>
+                    </div>
+                    <div class="col-md-4 contCenterLinks">
+                        <a href="/products/offers">Ofertas</a>
+                        <a href="/products">Productos</a>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Cateogorias
+                            </a>
+                            <div class="dropdown-menu" id='contenedorNavCategorys' aria-labelledby="dropdownMenuButton">
+                                <a href="/products/createCategory">Crear</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 contLoginRegisterLinks">
+                        <a href="/user/login">Login</a>
+                        <a href="/user/register">Register</a>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="lightDarkBtn">
+                            <input type="checkbox" class="checkbox" id="chk" />
+                            <label class="label" for="chk">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-sun"></i>
+                                <div class="ball"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-4 contInputBuscar">
+                        <form action="/results" method="POST" class="d-flex">
+                            <input type="text" class="form-control inputBuscar" placeholder="Buscar Producto" id="inputSearch" name="searchResult">
+                            <input type='submit'class="btn btn-success" id="btnSearch" value="Buscar"></input>
+                        </form>
+                    </div>
+                    <div class="col-md-8 contenedorLinkCart">
+                        <a href="/cart">Carrito</a>
+                    </div>
+                </div>
+            </div>
+        <% } %>    
+</nav>
+<script>
+    async function getCategorys(){
+        await fetch('http://localhost:4000/api/categorys')
+        .then(res => res.json())
+        .then(par => {
+            for(let i = 0; i < par.length; i++){
+                let category = document.createElement('a')
+                let contenido = document.createTextNode(par[i].name)
+                let contenedor = document.getElementById('contenedorNavCategorys')
+                category.setAttribute('href', `/products/category/${par[i].id}`)
+                category.appendChild(contenido)
+                contenedor.appendChild(category)    
+            }
+        })
+    }
+
+    getCategorys()
+</script>

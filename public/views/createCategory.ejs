@@ -1,0 +1,23 @@
+<%- include('./partials/head.ejs') %> 
+
+<%- include('./partials/nav.ejs') %> 
+
+<body>
+
+    <div class="container contCreateProd background">
+        <h3>Crear Categoria</h3>
+
+        <form action="/products/category" method="POST">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <input type="text" id="nameCategory" name="name" class="form-control" placeholder="Nombre">
+                </div>
+            <div class="col-md-12">
+                <input type="submit" value="Crear" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+<%- include('./partials/footer.ejs') %> 
