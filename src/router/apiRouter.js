@@ -14,4 +14,6 @@ router.get('/destacados', apiController.destacados)
 
 router.get('/ofertasDestacados', apiController.ofertasDestacados)
 
+router.get('/totalPerCategory', apiController.totalPerCategory)
+
 module.exports = router

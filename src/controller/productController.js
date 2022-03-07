@@ -40,7 +40,7 @@ let productController = {
                 price: price,
                 discount: discount ? discount : '0',
                 priceWithDiscount: price - (price * 0.01 * discount),
-                category_id: category,
+                category_id: Number(category),
                 category: par.name,
                 img: req.file ? req.file.filename : 'default.jpeg',
                 date: date,
@@ -124,7 +124,10 @@ let productController = {
         const products = db.Products.findAll({
             where: {
                 category_id: req.params.id
-            }
+            }, 
+            order: [
+               ['price', 'ASC']
+            ]
         })
         const categorys = db.Categorys.findAll()
         let allPromises = Promise.all([products, categorys])
@@ -133,6 +136,7 @@ let productController = {
                 products: par[0],
                 categorys: par[1],
                 categoryName: par[1][req.params.id - 1].name,
+                categoryID: par[1][req.params.id - 1].id,
                 user: req.session.userLogged ? req.session.userLogged : false
             })
         })  
@@ -146,6 +150,50 @@ let productController = {
                 user: req.session.userLogged ? req.session.userLogged : false
             })
         })
+    },
+    cart: (req, res) => {
+        res.render('cart')
+    },
+    featured: (req, res) => {
+        fetch('http://localhost:4000/api/destacados')
+        .then((res) => res.json())
+        .then((products) => {
+            products.forEach(product => {
+                if(product.category_id == req.params.id){
+                    db.Categorys.findAll()
+                    .then((categorys) => {
+                        console.log(product)
+                        // res.render('featuredPerCategory', {
+                        //     products: product,
+                        //     categorys,
+                        //     categoryName: categorys[req.params.id - 1].name,
+                        //     categoryID: categorys[req.params.id - 1].id,
+                        //     user: req.session.userLogged ? req.session.userLogged : false
+                        // })
+                    })
+                }
+            })
+        })
+        const products = db.Products.findAll({
+            where: {
+                category_id: req.params.id
+            }, 
+            order: [
+               ['timesVisited', 'desc']
+            ]
+        })
+        const categorys = db.Categorys.findAll()
+        let allPromises = Promise.all([products, categorys])
+        allPromises.then( (par) => {
+            console.log(par[1][req.params.id - 1])
+            res.render('featuredPerCategory', {
+                products: par[0],
+                categorys: par[1],
+                categoryName: par[1][req.params.id - 1].name,
+                categoryID: par[1][req.params.id - 1].id,
+                user: req.session.userLogged ? req.session.userLogged : false
+            })
+        }) 
     }
 }
 

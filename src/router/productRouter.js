@@ -14,9 +14,14 @@ router.get('/createCategory', productController.createCategory)
 
 router.get('/category/:id', productController.productInCategory)
 
+router.get('/featured/:id', productController.featured)
+
 router.get('/update/:id', productController.update)
 
 router.get('/:id', productController.detail)
+
+router.get('/cart', productController.cart)
+
 
 //* POST
 router.post('/create', multer.single('productimg'), productController.saved)

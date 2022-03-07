@@ -31,7 +31,7 @@
                     <select name="category" class='form form-control' id='category'>
                         <option value="null" selecter>Seleccionar Categoria</option>
                         <% for(let i = 0; i < categorys.length; i++){ %> 
-                            <option value="<%= categorys[i].id %>"><%= categorys[i].name %></option>
+                            <option value=<%= categorys[i].id %>><%= categorys[i].name %></option>
                         <% } %> 
                     </select>
                 </div>
